@@ -1,0 +1,11 @@
+services:
+  bind:
+    image: bind-test:40
+    container_name: bind1
+    ports:
+      - "5330:53/tcp"
+      - "5330:53/udp"
+    volumes:
+      - ./config:/bind
+      - ./bind-cache:/var/cache/bind
+    restart: on-failure
