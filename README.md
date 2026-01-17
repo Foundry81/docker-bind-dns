@@ -48,4 +48,5 @@ Each template’s `README.md` reinforces this progression with **practical conte
 ## Final Thoughts
 DNS is simple in concept but subtle in practice.  
 This repository provides **explanation, structure, and safe experimentation**, letting you learn the patterns behind real-world deployments - before making decisions that carry operational consequences.
+
 (It's not _always_ DNS.)
