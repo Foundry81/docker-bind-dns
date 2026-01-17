@@ -1,0 +1,13 @@
+services:
+  resolver:
+    build:
+      context: ../
+      dockerfile: Dockerfile
+    image: 100781/bind-dns
+    container_name: bind-resolver
+    ports:
+      - "53:53/tcp"
+      - "53:53/udp"
+    volumes:
+      - ./resolver:/etc/bind
+    restart: unless-stopped
